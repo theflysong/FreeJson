@@ -1,5 +1,6 @@
 #include"JSONParser/JSONParser.h"
 
+/*implemented*/ 
 void JsonParser::toString(string &obj){
 	obj="";
 	for(int i=1;i<v.length()-1;i++){
