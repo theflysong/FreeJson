@@ -2,21 +2,12 @@
 #define __JSONPARSER__
 
 /*init*/
-#include <fstream>
-#include <iostream> 
-#include <map>
 #include <string>
-using std::ifstream;
-using std::ofstream;
-using std::fstream;
-using std::istringstream;
-using std::ostringstream;
-using std::stringstream;
-using std::istream;
-using std::ostream;
-using std::iostream;
+#include <vector> 
+#include <map>
 using std::string;
 using std::map;
+using std::vector;
 
 /*
 	JsonParser class.
@@ -38,7 +29,7 @@ public:
 	void toDouble(double &obj);//unit(string) to double
 	int toArray(JsonParser obj[]);//unit(string) to array
 	void read(string path);//read json file from path
-	JSONParser operator[](string key);//overload operator[]
+	JsonParser operator[](string key);//overload operator[]
 	JsonParser();//construction function
 	~JsonParser();//deconstruction function
 };
